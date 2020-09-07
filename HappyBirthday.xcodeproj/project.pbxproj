@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D7D05F452506BF21004BB3B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F442506BF21004BB3B1 /* AppDelegate.swift */; };
-		D7D05F472506BF21004BB3B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F462506BF21004BB3B1 /* SceneDelegate.swift */; };
 		D7D05F492506BF21004BB3B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F482506BF21004BB3B1 /* ViewController.swift */; };
 		D7D05F4C2506BF21004BB3B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D05F4A2506BF21004BB3B1 /* Main.storyboard */; };
 		D7D05F4E2506BF24004BB3B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */; };
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		D7D05F412506BF21004BB3B1 /* HappyBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D05F442506BF21004BB3B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7D05F462506BF21004BB3B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D7D05F482506BF21004BB3B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D7D05F4B2506BF21004BB3B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				D7D05F442506BF21004BB3B1 /* AppDelegate.swift */,
-				D7D05F462506BF21004BB3B1 /* SceneDelegate.swift */,
 				D7D05F482506BF21004BB3B1 /* ViewController.swift */,
 				D7D05F4A2506BF21004BB3B1 /* Main.storyboard */,
 				D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */,
@@ -202,7 +199,6 @@
 			files = (
 				D7D05F492506BF21004BB3B1 /* ViewController.swift in Sources */,
 				D7D05F452506BF21004BB3B1 /* AppDelegate.swift in Sources */,
-				D7D05F472506BF21004BB3B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CH744BWJLN;
 				INFOPLIST_FILE = HappyBirthday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +369,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lexHrabovskyi.HappyBirthday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,6 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CH744BWJLN;
 				INFOPLIST_FILE = HappyBirthday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lexHrabovskyi.HappyBirthday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
