@@ -18,6 +18,9 @@
 		D7D05F6F2506C348004BB3B1 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F6E2506C348004BB3B1 /* DetailsViewModel.swift */; };
 		D7D05F702506C348004BB3B1 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F6E2506C348004BB3B1 /* DetailsViewModel.swift */; };
 		D7D05F722506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F712506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift */; };
+		D7D05F752506C96E004BB3B1 /* SavedUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F742506C96E004BB3B1 /* SavedUserData.swift */; };
+		D7D05F762506C975004BB3B1 /* SavedUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F742506C96E004BB3B1 /* SavedUserData.swift */; };
+		D7D05F782506C9EE004BB3B1 /* SavedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		D7D05F6B2506C336004BB3B1 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		D7D05F6E2506C348004BB3B1 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		D7D05F712506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsVC+DetailsDelegate.swift"; sourceTree = "<group>"; };
+		D7D05F742506C96E004BB3B1 /* SavedUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUserData.swift; sourceTree = "<group>"; };
+		D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				D7D05F442506BF21004BB3B1 /* AppDelegate.swift */,
+				D7D05F732506C942004BB3B1 /* Saved user data */,
 				D7D05F662506C2EB004BB3B1 /* Details screen */,
 				D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */,
 				D7D05F4F2506BF24004BB3B1 /* LaunchScreen.storyboard */,
@@ -113,6 +119,15 @@
 				D7D05F6B2506C336004BB3B1 /* DetailsViewController.xib */,
 			);
 			path = "Details screen";
+			sourceTree = "<group>";
+		};
+		D7D05F732506C942004BB3B1 /* Saved user data */ = {
+			isa = PBXGroup;
+			children = (
+				D7D05F742506C96E004BB3B1 /* SavedUserData.swift */,
+				D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */,
+			);
+			path = "Saved user data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D05F682506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */,
+				D7D05F782506C9EE004BB3B1 /* SavedDataService.swift in Sources */,
 				D7D05F6F2506C348004BB3B1 /* DetailsViewModel.swift in Sources */,
+				D7D05F752506C96E004BB3B1 /* SavedUserData.swift in Sources */,
 				D7D05F452506BF21004BB3B1 /* AppDelegate.swift in Sources */,
 				D7D05F6C2506C336004BB3B1 /* DetailsViewController.swift in Sources */,
 				D7D05F722506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift in Sources */,
@@ -230,6 +247,7 @@
 			files = (
 				D7D05F692506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */,
 				D7D05F5C2506BF24004BB3B1 /* HappyBirthdayTests.swift in Sources */,
+				D7D05F762506C975004BB3B1 /* SavedUserData.swift in Sources */,
 				D7D05F702506C348004BB3B1 /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
