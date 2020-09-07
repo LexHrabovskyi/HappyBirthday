@@ -23,6 +23,13 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         viewModel.delegate = self
         configureUI()
+        // TODO:
+        // add filling the data from saved
+        // add notification for end editing with saving data at the end
+        // add tap gesture for image view:
+        //   conform to UIImagePickerControllerDelegate
+        //   add sheet with camera and gallery option (+ cancel)
+        //   add saving data on ...didFinishPickingMediaWithInfo.. delegate's method
         
     }
     

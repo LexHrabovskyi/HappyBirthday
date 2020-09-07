@@ -11,12 +11,15 @@ import Foundation
 protocol DetailsModel: class {
     
     var delegate: DetailsDelegate? { get set }
-    
+    func getSavedData() -> SavedUserData?
+    func saveUserData(_ dataToSave: SavedUserData)
     
 }
 
 protocol DetailsDelegate: class {
     
-    
+    func showError(message: String)
+    func enableContinueButton()
+    func disableContinueButton()
     
 }

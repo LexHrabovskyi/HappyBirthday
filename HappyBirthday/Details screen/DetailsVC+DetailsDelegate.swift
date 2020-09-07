@@ -10,4 +10,20 @@ import Foundation
 
 extension DetailsViewController: DetailsDelegate {
     
+    func showError(message: String) {
+        // TODO: show alert with error message + OK button
+    }
+    
+    func enableContinueButton() {
+        // TODO: change button
+        // isEnabled to true
+        // background color to blue
+    }
+    
+    func disableContinueButton() {
+        // TODO: change button
+        // isEnabled to false
+        // background color to gray
+    }
+    
 }
