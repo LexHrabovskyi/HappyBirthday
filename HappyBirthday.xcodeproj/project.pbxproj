@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7BE6F6C2507E8DD00F35CE4 /* DetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F6B2507E8DD00F35CE4 /* DetailsViewModelTests.swift */; };
+		D7BE6F6E2507E93900F35CE4 /* DetailsDelegateMOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F6D2507E93900F35CE4 /* DetailsDelegateMOCK.swift */; };
 		D7D05F452506BF21004BB3B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F442506BF21004BB3B1 /* AppDelegate.swift */; };
 		D7D05F4E2506BF24004BB3B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */; };
 		D7D05F512506BF24004BB3B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D05F4F2506BF24004BB3B1 /* LaunchScreen.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7BE6F6B2507E8DD00F35CE4 /* DetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelTests.swift; sourceTree = "<group>"; };
+		D7BE6F6D2507E93900F35CE4 /* DetailsDelegateMOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDelegateMOCK.swift; sourceTree = "<group>"; };
 		D7D05F412506BF21004BB3B1 /* HappyBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D05F442506BF21004BB3B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7BE6F6F2507EA0400F35CE4 /* Details model tests */ = {
+			isa = PBXGroup;
+			children = (
+				D7BE6F6B2507E8DD00F35CE4 /* DetailsViewModelTests.swift */,
+				D7BE6F6D2507E93900F35CE4 /* DetailsDelegateMOCK.swift */,
+			);
+			path = "Details model tests";
+			sourceTree = "<group>";
+		};
 		D7D05F382506BF21004BB3B1 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D7D05F5B2506BF24004BB3B1 /* SavedUserDataTests.swift */,
+				D7BE6F6F2507EA0400F35CE4 /* Details model tests */,
 				D7D05F5D2506BF24004BB3B1 /* Info.plist */,
 			);
 			path = HappyBirthdayTests;
@@ -249,6 +263,8 @@
 				D7D05F692506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */,
 				D7D05F5C2506BF24004BB3B1 /* SavedUserDataTests.swift in Sources */,
 				D7D05F762506C975004BB3B1 /* SavedUserData.swift in Sources */,
+				D7BE6F6C2507E8DD00F35CE4 /* DetailsViewModelTests.swift in Sources */,
+				D7BE6F6E2507E93900F35CE4 /* DetailsDelegateMOCK.swift in Sources */,
 				D7FF1CE52507DB4C00B2C008 /* SavedDataService.swift in Sources */,
 				D7D05F702506C348004BB3B1 /* DetailsViewModel.swift in Sources */,
 			);
