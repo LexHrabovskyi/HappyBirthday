@@ -10,7 +10,7 @@
 		D7D05F452506BF21004BB3B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F442506BF21004BB3B1 /* AppDelegate.swift */; };
 		D7D05F4E2506BF24004BB3B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */; };
 		D7D05F512506BF24004BB3B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D05F4F2506BF24004BB3B1 /* LaunchScreen.storyboard */; };
-		D7D05F5C2506BF24004BB3B1 /* HappyBirthdayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F5B2506BF24004BB3B1 /* HappyBirthdayTests.swift */; };
+		D7D05F5C2506BF24004BB3B1 /* SavedUserDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F5B2506BF24004BB3B1 /* SavedUserDataTests.swift */; };
 		D7D05F682506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F672506C314004BB3B1 /* DetailsScreenProtocols.swift */; };
 		D7D05F692506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F672506C314004BB3B1 /* DetailsScreenProtocols.swift */; };
 		D7D05F6C2506C336004BB3B1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F6A2506C336004BB3B1 /* DetailsViewController.swift */; };
@@ -21,6 +21,7 @@
 		D7D05F752506C96E004BB3B1 /* SavedUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F742506C96E004BB3B1 /* SavedUserData.swift */; };
 		D7D05F762506C975004BB3B1 /* SavedUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F742506C96E004BB3B1 /* SavedUserData.swift */; };
 		D7D05F782506C9EE004BB3B1 /* SavedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */; };
+		D7FF1CE52507DB4C00B2C008 /* SavedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 		D7D05F502506BF24004BB3B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7D05F522506BF24004BB3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7D05F572506BF24004BB3B1 /* HappyBirthdayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyBirthdayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7D05F5B2506BF24004BB3B1 /* HappyBirthdayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyBirthdayTests.swift; sourceTree = "<group>"; };
+		D7D05F5B2506BF24004BB3B1 /* SavedUserDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUserDataTests.swift; sourceTree = "<group>"; };
 		D7D05F5D2506BF24004BB3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7D05F672506C314004BB3B1 /* DetailsScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreenProtocols.swift; sourceTree = "<group>"; };
 		D7D05F6A2506C336004BB3B1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +104,7 @@
 		D7D05F5A2506BF24004BB3B1 /* HappyBirthdayTests */ = {
 			isa = PBXGroup;
 			children = (
-				D7D05F5B2506BF24004BB3B1 /* HappyBirthdayTests.swift */,
+				D7D05F5B2506BF24004BB3B1 /* SavedUserDataTests.swift */,
 				D7D05F5D2506BF24004BB3B1 /* Info.plist */,
 			);
 			path = HappyBirthdayTests;
@@ -246,8 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D05F692506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */,
-				D7D05F5C2506BF24004BB3B1 /* HappyBirthdayTests.swift in Sources */,
+				D7D05F5C2506BF24004BB3B1 /* SavedUserDataTests.swift in Sources */,
 				D7D05F762506C975004BB3B1 /* SavedUserData.swift in Sources */,
+				D7FF1CE52507DB4C00B2C008 /* SavedDataService.swift in Sources */,
 				D7D05F702506C348004BB3B1 /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
