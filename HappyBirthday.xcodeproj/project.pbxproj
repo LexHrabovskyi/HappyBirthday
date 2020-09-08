@@ -7,12 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7BE6F6C2507E8DD00F35CE4 /* DetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F6B2507E8DD00F35CE4 /* DetailsViewModelTests.swift */; };
+		D7BE6F6E2507E93900F35CE4 /* DetailsDelegateMOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F6D2507E93900F35CE4 /* DetailsDelegateMOCK.swift */; };
+		D7BE6F722507F64600F35CE4 /* AgeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F712507F64600F35CE4 /* AgeCount.swift */; };
+		D7BE6F732507F64600F35CE4 /* AgeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F712507F64600F35CE4 /* AgeCount.swift */; };
+		D7BE6F752507F71900F35CE4 /* AgeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F742507F71900F35CE4 /* AgeCalculator.swift */; };
+		D7BE6F762507F71900F35CE4 /* AgeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F742507F71900F35CE4 /* AgeCalculator.swift */; };
+		D7BE6F782507FA1100F35CE4 /* DateCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F772507FA1100F35CE4 /* DateCalculatorTests.swift */; };
+		D7BE6F7B250819A300F35CE4 /* PhotoPickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F7A250819A300F35CE4 /* PhotoPickerService.swift */; };
 		D7D05F452506BF21004BB3B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F442506BF21004BB3B1 /* AppDelegate.swift */; };
-		D7D05F492506BF21004BB3B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F482506BF21004BB3B1 /* ViewController.swift */; };
-		D7D05F4C2506BF21004BB3B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D05F4A2506BF21004BB3B1 /* Main.storyboard */; };
 		D7D05F4E2506BF24004BB3B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */; };
 		D7D05F512506BF24004BB3B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D05F4F2506BF24004BB3B1 /* LaunchScreen.storyboard */; };
-		D7D05F5C2506BF24004BB3B1 /* HappyBirthdayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F5B2506BF24004BB3B1 /* HappyBirthdayTests.swift */; };
+		D7D05F5C2506BF24004BB3B1 /* SavedUserDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F5B2506BF24004BB3B1 /* SavedUserDataTests.swift */; };
+		D7D05F682506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F672506C314004BB3B1 /* DetailsScreenProtocols.swift */; };
+		D7D05F692506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F672506C314004BB3B1 /* DetailsScreenProtocols.swift */; };
+		D7D05F6C2506C336004BB3B1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F6A2506C336004BB3B1 /* DetailsViewController.swift */; };
+		D7D05F6D2506C336004BB3B1 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D05F6B2506C336004BB3B1 /* DetailsViewController.xib */; };
+		D7D05F6F2506C348004BB3B1 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F6E2506C348004BB3B1 /* DetailsViewModel.swift */; };
+		D7D05F702506C348004BB3B1 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F6E2506C348004BB3B1 /* DetailsViewModel.swift */; };
+		D7D05F722506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F712506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift */; };
+		D7D05F752506C96E004BB3B1 /* SavedUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F742506C96E004BB3B1 /* SavedUserData.swift */; };
+		D7D05F762506C975004BB3B1 /* SavedUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F742506C96E004BB3B1 /* SavedUserData.swift */; };
+		D7D05F782506C9EE004BB3B1 /* SavedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */; };
+		D7FF1CE52507DB4C00B2C008 /* SavedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +43,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7BE6F6B2507E8DD00F35CE4 /* DetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelTests.swift; sourceTree = "<group>"; };
+		D7BE6F6D2507E93900F35CE4 /* DetailsDelegateMOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDelegateMOCK.swift; sourceTree = "<group>"; };
+		D7BE6F712507F64600F35CE4 /* AgeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCount.swift; sourceTree = "<group>"; };
+		D7BE6F742507F71900F35CE4 /* AgeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCalculator.swift; sourceTree = "<group>"; };
+		D7BE6F772507FA1100F35CE4 /* DateCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCalculatorTests.swift; sourceTree = "<group>"; };
+		D7BE6F7A250819A300F35CE4 /* PhotoPickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerService.swift; sourceTree = "<group>"; };
 		D7D05F412506BF21004BB3B1 /* HappyBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D05F442506BF21004BB3B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7D05F482506BF21004BB3B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D7D05F4B2506BF21004BB3B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7D05F502506BF24004BB3B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7D05F522506BF24004BB3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7D05F572506BF24004BB3B1 /* HappyBirthdayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyBirthdayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7D05F5B2506BF24004BB3B1 /* HappyBirthdayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyBirthdayTests.swift; sourceTree = "<group>"; };
+		D7D05F5B2506BF24004BB3B1 /* SavedUserDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUserDataTests.swift; sourceTree = "<group>"; };
 		D7D05F5D2506BF24004BB3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7D05F672506C314004BB3B1 /* DetailsScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreenProtocols.swift; sourceTree = "<group>"; };
+		D7D05F6A2506C336004BB3B1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		D7D05F6B2506C336004BB3B1 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		D7D05F6E2506C348004BB3B1 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		D7D05F712506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsVC+DetailsDelegate.swift"; sourceTree = "<group>"; };
+		D7D05F742506C96E004BB3B1 /* SavedUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUserData.swift; sourceTree = "<group>"; };
+		D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7BE6F6F2507EA0400F35CE4 /* Details model tests */ = {
+			isa = PBXGroup;
+			children = (
+				D7BE6F6B2507E8DD00F35CE4 /* DetailsViewModelTests.swift */,
+				D7BE6F6D2507E93900F35CE4 /* DetailsDelegateMOCK.swift */,
+			);
+			path = "Details model tests";
+			sourceTree = "<group>";
+		};
+		D7BE6F702507F54A00F35CE4 /* Age calculation */ = {
+			isa = PBXGroup;
+			children = (
+				D7BE6F712507F64600F35CE4 /* AgeCount.swift */,
+				D7BE6F742507F71900F35CE4 /* AgeCalculator.swift */,
+			);
+			path = "Age calculation";
+			sourceTree = "<group>";
+		};
+		D7BE6F792508197600F35CE4 /* Photo picker */ = {
+			isa = PBXGroup;
+			children = (
+				D7BE6F7A250819A300F35CE4 /* PhotoPickerService.swift */,
+			);
+			path = "Photo picker";
+			sourceTree = "<group>";
+		};
 		D7D05F382506BF21004BB3B1 = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +132,10 @@
 			isa = PBXGroup;
 			children = (
 				D7D05F442506BF21004BB3B1 /* AppDelegate.swift */,
-				D7D05F482506BF21004BB3B1 /* ViewController.swift */,
-				D7D05F4A2506BF21004BB3B1 /* Main.storyboard */,
+				D7BE6F702507F54A00F35CE4 /* Age calculation */,
+				D7D05F732506C942004BB3B1 /* Saved user data */,
+				D7D05F662506C2EB004BB3B1 /* Details screen */,
+				D7BE6F792508197600F35CE4 /* Photo picker */,
 				D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */,
 				D7D05F4F2506BF24004BB3B1 /* LaunchScreen.storyboard */,
 				D7D05F522506BF24004BB3B1 /* Info.plist */,
@@ -90,10 +146,33 @@
 		D7D05F5A2506BF24004BB3B1 /* HappyBirthdayTests */ = {
 			isa = PBXGroup;
 			children = (
-				D7D05F5B2506BF24004BB3B1 /* HappyBirthdayTests.swift */,
+				D7D05F5B2506BF24004BB3B1 /* SavedUserDataTests.swift */,
+				D7BE6F772507FA1100F35CE4 /* DateCalculatorTests.swift */,
+				D7BE6F6F2507EA0400F35CE4 /* Details model tests */,
 				D7D05F5D2506BF24004BB3B1 /* Info.plist */,
 			);
 			path = HappyBirthdayTests;
+			sourceTree = "<group>";
+		};
+		D7D05F662506C2EB004BB3B1 /* Details screen */ = {
+			isa = PBXGroup;
+			children = (
+				D7D05F672506C314004BB3B1 /* DetailsScreenProtocols.swift */,
+				D7D05F6E2506C348004BB3B1 /* DetailsViewModel.swift */,
+				D7D05F6A2506C336004BB3B1 /* DetailsViewController.swift */,
+				D7D05F712506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift */,
+				D7D05F6B2506C336004BB3B1 /* DetailsViewController.xib */,
+			);
+			path = "Details screen";
+			sourceTree = "<group>";
+		};
+		D7D05F732506C942004BB3B1 /* Saved user data */ = {
+			isa = PBXGroup;
+			children = (
+				D7D05F742506C96E004BB3B1 /* SavedUserData.swift */,
+				D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */,
+			);
+			path = "Saved user data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +258,7 @@
 			files = (
 				D7D05F512506BF24004BB3B1 /* LaunchScreen.storyboard in Resources */,
 				D7D05F4E2506BF24004BB3B1 /* Assets.xcassets in Resources */,
-				D7D05F4C2506BF21004BB3B1 /* Main.storyboard in Resources */,
+				D7D05F6D2506C336004BB3B1 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +276,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7D05F492506BF21004BB3B1 /* ViewController.swift in Sources */,
+				D7D05F682506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */,
+				D7D05F782506C9EE004BB3B1 /* SavedDataService.swift in Sources */,
+				D7D05F6F2506C348004BB3B1 /* DetailsViewModel.swift in Sources */,
+				D7D05F752506C96E004BB3B1 /* SavedUserData.swift in Sources */,
 				D7D05F452506BF21004BB3B1 /* AppDelegate.swift in Sources */,
+				D7D05F6C2506C336004BB3B1 /* DetailsViewController.swift in Sources */,
+				D7D05F722506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift in Sources */,
+				D7BE6F752507F71900F35CE4 /* AgeCalculator.swift in Sources */,
+				D7BE6F7B250819A300F35CE4 /* PhotoPickerService.swift in Sources */,
+				D7BE6F722507F64600F35CE4 /* AgeCount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +293,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7D05F5C2506BF24004BB3B1 /* HappyBirthdayTests.swift in Sources */,
+				D7D05F692506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */,
+				D7D05F5C2506BF24004BB3B1 /* SavedUserDataTests.swift in Sources */,
+				D7D05F762506C975004BB3B1 /* SavedUserData.swift in Sources */,
+				D7BE6F6C2507E8DD00F35CE4 /* DetailsViewModelTests.swift in Sources */,
+				D7BE6F6E2507E93900F35CE4 /* DetailsDelegateMOCK.swift in Sources */,
+				D7BE6F782507FA1100F35CE4 /* DateCalculatorTests.swift in Sources */,
+				D7FF1CE52507DB4C00B2C008 /* SavedDataService.swift in Sources */,
+				D7D05F702506C348004BB3B1 /* DetailsViewModel.swift in Sources */,
+				D7BE6F762507F71900F35CE4 /* AgeCalculator.swift in Sources */,
+				D7BE6F732507F64600F35CE4 /* AgeCount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +317,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D7D05F4A2506BF21004BB3B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7D05F4B2506BF21004BB3B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D7D05F4F2506BF24004BB3B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
