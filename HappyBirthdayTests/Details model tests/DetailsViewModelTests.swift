@@ -45,6 +45,7 @@ class DetailsViewModelTests: XCTestCase {
         let thirteenYearsAgo = Calendar.current.date(byAdding: .year, value: -13, to: currentDate)
         let errorSavedData = SavedUserData(name: "Lex", dateOfBirth: thirteenYearsAgo!, photoData: nil)
         let testedModel = DetailsViewModel()
+        testedModel.delegate = detailsDelegate
         testedModel.saveUserData(errorSavedData)
         
         wait(for: [errorExpactation], timeout: 0.1)
