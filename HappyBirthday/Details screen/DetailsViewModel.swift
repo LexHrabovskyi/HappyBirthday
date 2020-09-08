@@ -11,28 +11,54 @@ import Foundation
 class DetailsViewModel: DetailsModel {
     
     weak var delegate: DetailsDelegate?
+    private var previousYearError = 999999
     
     func getSavedData() -> SavedUserData? {
         
-        // TODO:
-        // get saved data from service
-        // call "checkSavedData"
-        return nil
+        let dataFromService = SavedDataService.getUserData()
+        guard let loadedData = dataFromService else {
+            delegate?.disableContinueButton()
+            return nil
+        }
+        checkSavedData(loadedData)
+        return loadedData
+        
     }
     
     func saveUserData(_ dataToSave: SavedUserData) {
         
-        // TODO:
-        // save data from service
-        // call "checkSavedData"
+        SavedDataService.save(userData: dataToSave)
+        checkSavedData(dataToSave)
         
     }
     
     private func checkSavedData(_ savedData: SavedUserData) {
         
-        // if name and birthday are:
-        //   empty: disable continue button for delegate
-        //   not empty: enable continue button for delegate
+        guard let childAge = AgeCalculator.calculatePeriod(fromLesserDate: savedData.dateOfBirth, toBiggerDate: Date()) else {
+            
+            delegate?.showError(message: "Wrong date of birth!")
+            return
+            
+        }
+        
+        switch childAge {
+        case .year(let fullYears):
+            
+            guard fullYears > 12 else {
+                delegate?.enableContinueButton()
+                return
+            }
+            
+            if fullYears != previousYearError {
+                previousYearError = fullYears
+                delegate?.showError(message: "Child should be yonger that 13 years old")
+            }
+            
+            delegate?.disableContinueButton()
+            
+        default:
+            delegate?.enableContinueButton()
+        }
         
     }
     
