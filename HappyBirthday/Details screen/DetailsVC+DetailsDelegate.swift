@@ -6,24 +6,27 @@
 //  Copyright © 2020 Александр. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension DetailsViewController: DetailsDelegate {
     
     func showError(message: String) {
-        // TODO: show alert with error message + OK button
+        
+        let alertVC = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alertVC.addAction(okAction)
+        self.present(alertVC, animated: true)
+        
     }
     
     func enableContinueButton() {
-        // TODO: change button
-        // isEnabled to true
-        // background color to blue
+        showBirthdayScreenButton.isEnabled = true
+        showBirthdayScreenButton.backgroundColor = .systemBlue
     }
     
     func disableContinueButton() {
-        // TODO: change button
-        // isEnabled to false
-        // background color to gray
+        showBirthdayScreenButton.isEnabled = false
+        showBirthdayScreenButton.backgroundColor = .gray
     }
     
 }
