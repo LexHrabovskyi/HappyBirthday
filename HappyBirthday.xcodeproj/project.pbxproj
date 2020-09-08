@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		D7BE6F6C2507E8DD00F35CE4 /* DetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F6B2507E8DD00F35CE4 /* DetailsViewModelTests.swift */; };
 		D7BE6F6E2507E93900F35CE4 /* DetailsDelegateMOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F6D2507E93900F35CE4 /* DetailsDelegateMOCK.swift */; };
+		D7BE6F722507F64600F35CE4 /* AgeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F712507F64600F35CE4 /* AgeCount.swift */; };
+		D7BE6F732507F64600F35CE4 /* AgeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F712507F64600F35CE4 /* AgeCount.swift */; };
+		D7BE6F752507F71900F35CE4 /* AgeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F742507F71900F35CE4 /* AgeCalculator.swift */; };
+		D7BE6F762507F71900F35CE4 /* AgeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F742507F71900F35CE4 /* AgeCalculator.swift */; };
+		D7BE6F782507FA1100F35CE4 /* DateCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F772507FA1100F35CE4 /* DateCalculatorTests.swift */; };
 		D7D05F452506BF21004BB3B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F442506BF21004BB3B1 /* AppDelegate.swift */; };
 		D7D05F4E2506BF24004BB3B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */; };
 		D7D05F512506BF24004BB3B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D05F4F2506BF24004BB3B1 /* LaunchScreen.storyboard */; };
@@ -39,6 +44,9 @@
 /* Begin PBXFileReference section */
 		D7BE6F6B2507E8DD00F35CE4 /* DetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelTests.swift; sourceTree = "<group>"; };
 		D7BE6F6D2507E93900F35CE4 /* DetailsDelegateMOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDelegateMOCK.swift; sourceTree = "<group>"; };
+		D7BE6F712507F64600F35CE4 /* AgeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCount.swift; sourceTree = "<group>"; };
+		D7BE6F742507F71900F35CE4 /* AgeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCalculator.swift; sourceTree = "<group>"; };
+		D7BE6F772507FA1100F35CE4 /* DateCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCalculatorTests.swift; sourceTree = "<group>"; };
 		D7D05F412506BF21004BB3B1 /* HappyBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D05F442506BF21004BB3B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +91,15 @@
 			path = "Details model tests";
 			sourceTree = "<group>";
 		};
+		D7BE6F702507F54A00F35CE4 /* Age calculation */ = {
+			isa = PBXGroup;
+			children = (
+				D7BE6F712507F64600F35CE4 /* AgeCount.swift */,
+				D7BE6F742507F71900F35CE4 /* AgeCalculator.swift */,
+			);
+			path = "Age calculation";
+			sourceTree = "<group>";
+		};
 		D7D05F382506BF21004BB3B1 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				D7D05F442506BF21004BB3B1 /* AppDelegate.swift */,
+				D7BE6F702507F54A00F35CE4 /* Age calculation */,
 				D7D05F732506C942004BB3B1 /* Saved user data */,
 				D7D05F662506C2EB004BB3B1 /* Details screen */,
 				D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */,
@@ -118,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				D7D05F5B2506BF24004BB3B1 /* SavedUserDataTests.swift */,
+				D7BE6F772507FA1100F35CE4 /* DateCalculatorTests.swift */,
 				D7BE6F6F2507EA0400F35CE4 /* Details model tests */,
 				D7D05F5D2506BF24004BB3B1 /* Info.plist */,
 			);
@@ -253,6 +272,8 @@
 				D7D05F452506BF21004BB3B1 /* AppDelegate.swift in Sources */,
 				D7D05F6C2506C336004BB3B1 /* DetailsViewController.swift in Sources */,
 				D7D05F722506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift in Sources */,
+				D7BE6F752507F71900F35CE4 /* AgeCalculator.swift in Sources */,
+				D7BE6F722507F64600F35CE4 /* AgeCount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +286,11 @@
 				D7D05F762506C975004BB3B1 /* SavedUserData.swift in Sources */,
 				D7BE6F6C2507E8DD00F35CE4 /* DetailsViewModelTests.swift in Sources */,
 				D7BE6F6E2507E93900F35CE4 /* DetailsDelegateMOCK.swift in Sources */,
+				D7BE6F782507FA1100F35CE4 /* DateCalculatorTests.swift in Sources */,
 				D7FF1CE52507DB4C00B2C008 /* SavedDataService.swift in Sources */,
 				D7D05F702506C348004BB3B1 /* DetailsViewModel.swift in Sources */,
+				D7BE6F762507F71900F35CE4 /* AgeCalculator.swift in Sources */,
+				D7BE6F732507F64600F35CE4 /* AgeCount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
