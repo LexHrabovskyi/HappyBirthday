@@ -28,8 +28,11 @@ class HappyBirthdayViewModel: HappyBirthdayModel {
         
     }
     
-    func getAgeImageName() -> String {
-        return "0"
+    func getChildAge() -> AgeCount {
+        guard let childAge = AgeCalculator.calculatePeriod(fromLesserDate: childData.dateOfBirth, toBiggerDate: Date()) else {
+            return .month(count: 0)
+        }
+        return childAge
     }
     
 }

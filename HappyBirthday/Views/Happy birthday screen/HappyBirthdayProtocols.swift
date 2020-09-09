@@ -13,7 +13,7 @@ protocol HappyBirthdayModel: class {
     var delegate: HappyBirthdayDelegate? { get set }
     var childData: SavedUserData { get }
     func generateRandomTheme()
-    func getAgeImageName() -> String
+    func getChildAge() -> AgeCount
     
 }
 
