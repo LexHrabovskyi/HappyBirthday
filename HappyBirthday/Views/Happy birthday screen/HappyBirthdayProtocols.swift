@@ -14,6 +14,7 @@ protocol HappyBirthdayModel: class {
     var childData: SavedUserData { get }
     func generateRandomTheme()
     func getChildAge() -> AgeCount
+    func saveNewChildPhoto(imageData: Data)
     
 }
 

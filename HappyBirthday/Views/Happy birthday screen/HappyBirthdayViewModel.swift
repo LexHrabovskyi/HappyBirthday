@@ -29,10 +29,19 @@ class HappyBirthdayViewModel: HappyBirthdayModel {
     }
     
     func getChildAge() -> AgeCount {
+        
         guard let childAge = AgeCalculator.calculatePeriod(fromLesserDate: childData.dateOfBirth, toBiggerDate: Date()) else {
             return .month(count: 0)
         }
         return childAge
+        
+    }
+    
+    func saveNewChildPhoto(imageData: Data) {
+        
+        let newDataToSave = SavedUserData(name: childData.name, dateOfBirth: childData.dateOfBirth, photoData: imageData)
+        SavedDataService.save(userData: newDataToSave)
+        
     }
     
 }

@@ -13,6 +13,7 @@
                 <outlet property="ageImageView" destination="paE-Cm-tvX" id="CdN-rJ-Fn1"/>
                 <outlet property="ageLabel" destination="PFM-SL-vXS" id="1Vo-Ie-uKp"/>
                 <outlet property="backgroundView" destination="kDQ-rJ-0X3" id="8q5-ho-ZF7"/>
+                <outlet property="cameraIconImageView" destination="FVh-K8-wG8" id="xkP-ug-7DA"/>
                 <outlet property="childPhotoImageView" destination="1CE-HQ-EhV" id="W5P-OE-wie"/>
                 <outlet property="closeButton" destination="5uy-ZZ-T3O" id="Dbe-D5-dhk"/>
                 <outlet property="greetingLabel" destination="kiO-ZM-m3u" id="uGh-J3-sWE"/>
@@ -72,6 +73,13 @@
                         <constraint firstAttribute="width" secondItem="1CE-HQ-EhV" secondAttribute="height" multiplier="1:1" id="Tbb-IJ-PyB"/>
                     </constraints>
                 </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera_icon_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="FVh-K8-wG8" userLabel="Camera icon">
+                    <rect key="frame" x="291" y="435.5" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="RoS-4r-Hlh"/>
+                        <constraint firstAttribute="width" secondItem="FVh-K8-wG8" secondAttribute="height" multiplier="1:1" id="osR-Bg-Wyf"/>
+                    </constraints>
+                </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iOS_elephant" translatesAutoresizingMaskIntoConstraints="NO" id="AXX-Kg-cae" userLabel="Main theme picture">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
@@ -109,6 +117,7 @@
                 <constraint firstItem="paE-Cm-tvX" firstAttribute="top" secondItem="zwX-ZK-gsY" secondAttribute="bottom" id="4VR-1V-pbL"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PFM-SL-vXS" secondAttribute="trailing" constant="100" id="4jj-Ed-zog"/>
                 <constraint firstItem="1CE-HQ-EhV" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.57971" id="66r-Xv-dlS"/>
+                <constraint firstItem="FVh-K8-wG8" firstAttribute="trailing" secondItem="1CE-HQ-EhV" secondAttribute="trailing" id="6km-W8-CWv"/>
                 <constraint firstItem="paE-Cm-tvX" firstAttribute="top" secondItem="kiO-ZM-m3u" secondAttribute="bottom" constant="16" id="B2U-qw-CbE"/>
                 <constraint firstItem="paE-Cm-tvX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="B8c-yo-8oR"/>
                 <constraint firstItem="nMk-n8-gwS" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.15" id="C6w-5O-pZ5"/>
@@ -123,6 +132,7 @@
                 <constraint firstItem="kDQ-rJ-0X3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Te7-JE-TSX"/>
                 <constraint firstItem="kDQ-rJ-0X3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UYP-1D-bSp"/>
                 <constraint firstItem="PFM-SL-vXS" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Uyu-KL-Z2f"/>
+                <constraint firstItem="FVh-K8-wG8" firstAttribute="top" secondItem="1CE-HQ-EhV" secondAttribute="top" id="Zky-FH-C7L"/>
                 <constraint firstItem="nMk-n8-gwS" firstAttribute="centerY" secondItem="paE-Cm-tvX" secondAttribute="centerY" id="abH-bw-WW8"/>
                 <constraint firstItem="kiO-ZM-m3u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="aia-WL-2ts"/>
                 <constraint firstItem="9TI-H7-OM9" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.2" id="avZ-Se-IZV"/>
@@ -148,6 +158,7 @@
     </objects>
     <resources>
         <image name="0" width="67" height="92"/>
+        <image name="Camera_icon_yellow" width="36" height="36"/>
         <image name="Default_place_holder_yellow" width="270" height="270"/>
         <image name="Left swirls" width="52" height="46"/>
         <image name="Page 1" width="57" height="20"/>
