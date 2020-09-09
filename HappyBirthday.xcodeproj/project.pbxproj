@@ -109,6 +109,14 @@
 			path = "Theme management";
 			sourceTree = "<group>";
 		};
+		D78B28B02508CFAC0003916A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7D05F662506C2EB004BB3B1 /* Details screen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D7BE6F6F2507EA0400F35CE4 /* Details model tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,9 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				D7D05F442506BF21004BB3B1 /* AppDelegate.swift */,
+				D78B28B02508CFAC0003916A /* Views */,
 				D7BE6F702507F54A00F35CE4 /* Age calculation */,
 				D7D05F732506C942004BB3B1 /* Saved user data */,
-				D7D05F662506C2EB004BB3B1 /* Details screen */,
 				D7BE6F792508197600F35CE4 /* Photo picker */,
 				D78B28A02508BF9F0003916A /* Theme management */,
 				D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */,
