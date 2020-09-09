@@ -19,6 +19,7 @@ protocol DetailsModel: class {
 protocol DetailsDelegate: class {
     
     func showError(message: String)
+    func updateImage(withData imageData: Data)
     func enableContinueButton()
     func disableContinueButton()
     

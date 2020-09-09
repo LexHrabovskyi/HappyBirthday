@@ -29,4 +29,8 @@ extension DetailsViewController: DetailsDelegate {
         showBirthdayScreenButton.backgroundColor = .gray
     }
     
+    func updateImage(withData imageData: Data) {
+        childImageView.image = UIImage(data: imageData)
+    }
+    
 }
