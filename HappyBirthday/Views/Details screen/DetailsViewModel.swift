@@ -31,6 +31,7 @@ class DetailsViewModel: DetailsModel {
     
     func saveUserData(_ dataToSave: SavedUserData) {
         SavedDataService.save(userData: dataToSave)
+        checkSavedData(dataToSave)
     }
     
     @objc

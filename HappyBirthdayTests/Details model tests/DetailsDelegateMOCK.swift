@@ -27,6 +27,8 @@ class DetailsDelegateMOCK: DetailsDelegate {
         self.disableButtonCompletion?()
     }
     
-    
+    func updateImage(withData imageData: Data) {
+        // TODO: tests with image
+    }
     
 }
