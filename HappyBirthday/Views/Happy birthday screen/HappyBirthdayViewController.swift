@@ -10,7 +10,17 @@ import UIKit
 
 class HappyBirthdayViewController: UIViewController {
 
+    @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var childPhotoImageView: UIImageView!
+    @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var mainThemeImageView: UIImageView!
+    @IBOutlet weak var greetingLabel: UILabel!
+    @IBOutlet weak var ageImageView: UIImageView!
+    @IBOutlet weak var ageLabel: UILabel!
+    
+    
     private var viewModel: HappyBirthdayModel
+    private var borderColor: UIColor?
     
     // MARK: - lifecycle
     init(viewModel: HappyBirthdayModel) {
@@ -23,27 +33,66 @@ class HappyBirthdayViewController: UIViewController {
         super.viewDidLoad()
         viewModel.delegate = self
         viewModel.generateRandomTheme()
+        configureUI()
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        // TODO:
-        // hide status bar
-        // draw transparent circle
-        // draw border
-        // calculate camera icon position
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        setChildPhotoIntoCircle()
+        drawBorderForChildPhoto()
+        
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        // TODO:
-        // show status bar
+    private func configureUI() {
+        
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        }
+        
+        childPhotoImageView.alpha = 0.01
+        
+        let childAge = viewModel.getChildAge()
+        ageImageView.image = AgeImages.getImage(forAge: childAge)
+        
+        let designedName = viewModel.childData.name.uppercased()
+        greetingLabel.text = "TODAY \(designedName) IS"
+        
+        switch childAge {
+        case .month(let months):
+            ageLabel.text = "MONTH\(months == 1 ? "" : "S") OLD!"
+        case .year(let fullYears), .halfAYear(let fullYears):
+            ageLabel.text = "YEAR\(fullYears == 1 ? "" : "S") OLD!"
+        }
+        
+        
+    }
+    
+    private func setChildPhotoIntoCircle() {
+        
+        childPhotoImageView.layer.cornerRadius = childPhotoImageView.frame.height / 2
+        childPhotoImageView.clipsToBounds = true
+        UIView.animate(withDuration: 0.4) {
+            self.childPhotoImageView.alpha = 1.0
+        }
+        
+    }
+    
+    private func drawBorderForChildPhoto() {
+        
+        guard let childPhotoBorderColor = borderColor?.cgColor else { return }
+        childPhotoImageView.layer.borderWidth = 8
+        childPhotoImageView.layer.borderColor = childPhotoBorderColor
+        
     }
     
     // TODO: add action for taking photo
     // TODO: add action for getting screenshot
-    // TODO: add action for dismiss
+
+    @IBAction func closeAction(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -55,13 +104,20 @@ extension HappyBirthdayViewController: HappyBirthdayDelegate {
     
     func update(withTheme: ThemeSet) {
         
-        // TODO: update elements:
-        // 1. main image
-        // 2. placeholder
-        // 3. camera icon
-        // 4. background color
-        // 5. save border color
-        // 6. place the nanit image at the right place
+        backgroundView.backgroundColor = withTheme.backgroundColor
+        mainThemeImageView.image = withTheme.mainImage
+        
+        if let childPhotoData = viewModel.childData.photoData,
+            let childPhoto = UIImage(data: childPhotoData) {
+            
+            childPhotoImageView.image = childPhoto
+            
+        } else {
+            childPhotoImageView.image = withTheme.placeholderImage
+        }
+        
+        borderColor = withTheme.circleBordercolor
+        
         
     }
     
