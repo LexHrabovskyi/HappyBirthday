@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HappyBirthdayViewController" customModule="HappyBirthday" customModuleProvider="target">
+            <connections>
+                <outlet property="ageImageView" destination="paE-Cm-tvX" id="CdN-rJ-Fn1"/>
+                <outlet property="ageLabel" destination="PFM-SL-vXS" id="1Vo-Ie-uKp"/>
+                <outlet property="backgroundView" destination="kDQ-rJ-0X3" id="8q5-ho-ZF7"/>
+                <outlet property="cameraIconImageView" destination="FVh-K8-wG8" id="xkP-ug-7DA"/>
+                <outlet property="childPhotoImageView" destination="1CE-HQ-EhV" id="W5P-OE-wie"/>
+                <outlet property="closeButton" destination="5uy-ZZ-T3O" id="Dbe-D5-dhk"/>
+                <outlet property="greetingLabel" destination="kiO-ZM-m3u" id="uGh-J3-sWE"/>
+                <outlet property="mainThemeImageView" destination="AXX-Kg-cae" id="mVG-iC-jsC"/>
+                <outlet property="shareButtonView" destination="NAI-lD-1yX" id="OPM-h8-sAU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwX-ZK-gsY" userLabel="Top spacer">
+                    <rect key="frame" x="126.5" y="0.0" width="161" height="161.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zwX-ZK-gsY" secondAttribute="height" multiplier="1:1" id="MrV-sc-zdJ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDQ-rJ-0X3" userLabel="Background view">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="0.96794825790000005" green="0.94254624840000001" blue="0.85489004850000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TODAY CHRISTIANA RONALDO IS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kiO-ZM-m3u" userLabel="Greeting label">
+                    <rect key="frame" x="50" y="76" width="314" height="69.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                    <color key="textColor" red="0.2366048694" green="0.27627405519999998" blue="0.3804048002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Left swirls" translatesAutoresizingMaskIntoConstraints="NO" id="uLc-9x-AzJ">
+                    <rect key="frame" x="93" y="184" width="62" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="uLc-9x-AzJ" secondAttribute="height" multiplier="1:1" id="J0D-i9-XSK"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="paE-Cm-tvX" userLabel="Age image">
+                    <rect key="frame" x="171" y="161.5" width="72" height="107.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="paE-Cm-tvX" secondAttribute="height" multiplier="1:1.5" id="aAq-Xv-1Va"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Right swirls" translatesAutoresizingMaskIntoConstraints="NO" id="nMk-n8-gwS">
+                    <rect key="frame" x="259" y="184" width="62" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="nMk-n8-gwS" secondAttribute="height" multiplier="1:1" id="HVN-Of-EJs"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTHS OLD!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PFM-SL-vXS" userLabel="Age label">
+                    <rect key="frame" x="100" y="285" width="214" height="35"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                    <color key="textColor" red="0.23655992749999999" green="0.27637124060000001" blue="0.37648284440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default_place_holder_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="1CE-HQ-EhV" userLabel="Child photo">
+                    <rect key="frame" x="87" y="435.5" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1CE-HQ-EhV" secondAttribute="height" multiplier="1:1" id="Tbb-IJ-PyB"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAI-lD-1yX" userLabel="Shared button view" customClass="ShareView" customModule="HappyBirthday" customModuleProvider="target">
+                    <rect key="frame" x="87" y="328" width="240" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="NAI-lD-1yX" secondAttribute="height" multiplier="8:1.5" id="KqG-6S-ika"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera_icon_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="FVh-K8-wG8" userLabel="Camera icon">
+                    <rect key="frame" x="291" y="435.5" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="RoS-4r-Hlh"/>
+                        <constraint firstAttribute="width" secondItem="FVh-K8-wG8" secondAttribute="height" multiplier="1:1" id="osR-Bg-Wyf"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iOS_elephant" translatesAutoresizingMaskIntoConstraints="NO" id="AXX-Kg-cae" userLabel="Main theme picture">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NCt-tA-NeF" userLabel="Spacer">
+                    <rect key="frame" x="131" y="675.5" width="152" height="152.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="NCt-tA-NeF" secondAttribute="height" multiplier="1:1" id="rM0-Er-oyP"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page 1" translatesAutoresizingMaskIntoConstraints="NO" id="9TI-H7-OM9" userLabel="Nanit logo">
+                    <rect key="frame" x="165.5" y="828" width="83" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9TI-H7-OM9" secondAttribute="height" multiplier="15:4" id="pI7-pg-LnQ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uy-ZZ-T3O" userLabel="Close button">
+                    <rect key="frame" x="10" y="54" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="Jks-7w-E4p"/>
+                        <constraint firstAttribute="width" secondItem="5uy-ZZ-T3O" secondAttribute="height" multiplier="1:1" id="zjP-rH-iKX"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="20" maxY="5"/>
+                    <state key="normal" image="btn_close"/>
+                    <connections>
+                        <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="63Y-Wi-wXo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="zwX-ZK-gsY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0OY-X6-oD0"/>
+                <constraint firstItem="5uy-ZZ-T3O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="0PQ-AP-PiW"/>
+                <constraint firstItem="zwX-ZK-gsY" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="0bf-Q3-ndK"/>
+                <constraint firstItem="paE-Cm-tvX" firstAttribute="top" secondItem="zwX-ZK-gsY" secondAttribute="bottom" id="4VR-1V-pbL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PFM-SL-vXS" secondAttribute="trailing" constant="100" id="4jj-Ed-zog"/>
+                <constraint firstItem="1CE-HQ-EhV" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.57971" id="66r-Xv-dlS"/>
+                <constraint firstItem="FVh-K8-wG8" firstAttribute="trailing" secondItem="1CE-HQ-EhV" secondAttribute="trailing" id="6km-W8-CWv"/>
+                <constraint firstItem="paE-Cm-tvX" firstAttribute="top" secondItem="kiO-ZM-m3u" secondAttribute="bottom" constant="16" id="B2U-qw-CbE"/>
+                <constraint firstItem="paE-Cm-tvX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="B8c-yo-8oR"/>
+                <constraint firstItem="nMk-n8-gwS" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.15" id="C6w-5O-pZ5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9TI-H7-OM9" secondAttribute="bottomMargin" constant="20" id="GZp-Id-m5f"/>
+                <constraint firstItem="paE-Cm-tvX" firstAttribute="leading" secondItem="uLc-9x-AzJ" secondAttribute="trailing" constant="16" id="Ix3-gm-xnP"/>
+                <constraint firstItem="paE-Cm-tvX" firstAttribute="height" secondItem="AXX-Kg-cae" secondAttribute="height" multiplier="0.12" id="Kbc-K7-lvW"/>
+                <constraint firstAttribute="bottom" secondItem="kDQ-rJ-0X3" secondAttribute="bottom" id="MS8-Nq-NXL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AXX-Kg-cae" secondAttribute="trailing" id="OZF-Cg-Dho"/>
+                <constraint firstItem="9TI-H7-OM9" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="RtH-IL-cfT"/>
+                <constraint firstItem="uLc-9x-AzJ" firstAttribute="centerY" secondItem="paE-Cm-tvX" secondAttribute="centerY" id="T0m-6c-vky"/>
+                <constraint firstItem="PFM-SL-vXS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="T6h-gz-hcv"/>
+                <constraint firstItem="kDQ-rJ-0X3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Te7-JE-TSX"/>
+                <constraint firstItem="kDQ-rJ-0X3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UYP-1D-bSp"/>
+                <constraint firstItem="PFM-SL-vXS" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Uyu-KL-Z2f"/>
+                <constraint firstItem="FVh-K8-wG8" firstAttribute="top" secondItem="1CE-HQ-EhV" secondAttribute="top" id="Zky-FH-C7L"/>
+                <constraint firstItem="nMk-n8-gwS" firstAttribute="centerY" secondItem="paE-Cm-tvX" secondAttribute="centerY" id="abH-bw-WW8"/>
+                <constraint firstItem="kiO-ZM-m3u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="aia-WL-2ts"/>
+                <constraint firstItem="9TI-H7-OM9" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.2" id="avZ-Se-IZV"/>
+                <constraint firstItem="uLc-9x-AzJ" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.15" id="bX8-oP-BpL"/>
+                <constraint firstItem="NAI-lD-1yX" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.57971" id="czd-E9-yfP"/>
+                <constraint firstItem="AXX-Kg-cae" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fG0-1H-7Ml"/>
+                <constraint firstItem="NCt-tA-NeF" firstAttribute="top" secondItem="1CE-HQ-EhV" secondAttribute="bottom" id="gTr-mt-zKr"/>
+                <constraint firstItem="NAI-lD-1yX" firstAttribute="top" secondItem="PFM-SL-vXS" secondAttribute="bottom" constant="8" id="huc-Zz-0hB"/>
+                <constraint firstItem="zwX-ZK-gsY" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.18" id="hue-uF-tp1"/>
+                <constraint firstItem="9TI-H7-OM9" firstAttribute="top" secondItem="NCt-tA-NeF" secondAttribute="bottom" id="jSU-uw-zGM"/>
+                <constraint firstItem="AXX-Kg-cae" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jvM-eT-d2F"/>
+                <constraint firstItem="nMk-n8-gwS" firstAttribute="leading" secondItem="paE-Cm-tvX" secondAttribute="trailing" constant="16" id="lyO-O3-8vy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kDQ-rJ-0X3" secondAttribute="trailing" id="mla-iV-cWW"/>
+                <constraint firstItem="1CE-HQ-EhV" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ppc-wC-oX1"/>
+                <constraint firstItem="5uy-ZZ-T3O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="qeO-E3-gVu"/>
+                <constraint firstItem="NAI-lD-1yX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="rCN-Eg-qIo"/>
+                <constraint firstItem="PFM-SL-vXS" firstAttribute="top" secondItem="paE-Cm-tvX" secondAttribute="bottom" constant="16" id="rq5-jj-cys"/>
+                <constraint firstAttribute="bottom" secondItem="AXX-Kg-cae" secondAttribute="bottom" id="sYQ-BJ-ZCO"/>
+                <constraint firstItem="NCt-tA-NeF" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.17" id="u0H-q3-DnO"/>
+                <constraint firstItem="NCt-tA-NeF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xby-Es-yvy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kiO-ZM-m3u" secondAttribute="trailing" constant="50" id="yTh-gi-OGa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="0" width="67" height="92"/>
+        <image name="Camera_icon_yellow" width="36" height="36"/>
+        <image name="Default_place_holder_yellow" width="270" height="270"/>
+        <image name="Left swirls" width="52" height="46"/>
+        <image name="Page 1" width="57" height="20"/>
+        <image name="Right swirls" width="52" height="46"/>
+        <image name="btn_close" width="14" height="14"/>
+        <image name="iOS_elephant" width="375.5" height="667.5"/>
+    </resources>
+</document>

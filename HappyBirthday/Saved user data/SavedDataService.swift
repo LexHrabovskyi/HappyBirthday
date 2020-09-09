@@ -42,6 +42,8 @@ class SavedDataService {
         guard let photoData = userData.photoData else { return }
         saveImageData(photoData)
         
+        NotificationCenter.default.post(name: .savedDataDidUpdate, object: userData)
+        
     }
     
     private static func getImageData() -> Data? {
@@ -75,5 +77,11 @@ class SavedDataService {
         }
         
     }
+    
+}
+
+extension Notification.Name {
+    
+    static let savedDataDidUpdate = Notification.Name("savedDataDidUpdate")
     
 }

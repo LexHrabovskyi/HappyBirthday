@@ -13,6 +13,10 @@ class DetailsViewModel: DetailsModel {
     weak var delegate: DetailsDelegate?
     private var previousYearError = 999999
     
+    init() {
+        NotificationCenter.default.addObserver(self, selector: #selector(checkUpdatedData), name: .savedDataDidUpdate, object: nil)
+    }
+    
     func getSavedData() -> SavedUserData? {
         
         let dataFromService = SavedDataService.getUserData()
@@ -26,9 +30,17 @@ class DetailsViewModel: DetailsModel {
     }
     
     func saveUserData(_ dataToSave: SavedUserData) {
-        
         SavedDataService.save(userData: dataToSave)
-        checkSavedData(dataToSave)
+    }
+    
+    @objc
+    private func checkUpdatedData(notification: Notification) {
+        
+        guard let savedData = notification.object as? SavedUserData else { return }
+        checkSavedData(savedData)
+        if let childPhotoData = savedData.photoData {
+            delegate?.updateImage(withData: childPhotoData)
+        }
         
     }
     
