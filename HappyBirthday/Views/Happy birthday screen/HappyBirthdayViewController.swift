@@ -18,10 +18,10 @@ class HappyBirthdayViewController: UIViewController {
     @IBOutlet weak var ageImageView: UIImageView!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var cameraIconImageView: UIImageView!
+    @IBOutlet weak var shareButtonView: ShareView!
     
     fileprivate var imagePicker: ImagePicker!
-    private var viewModel: HappyBirthdayModel
-    private var borderColor: UIColor?
+    let viewModel: HappyBirthdayModel
     
     // MARK: - lifecycle
     init(viewModel: HappyBirthdayModel) {
@@ -33,16 +33,16 @@ class HappyBirthdayViewController: UIViewController {
         
         super.viewDidLoad()
         viewModel.delegate = self
+        shareButtonView.delegate = self
         viewModel.generateRandomTheme()
         configureUI()
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
+        super.viewDidAppear(animated)
         setChildPhotoIntoCircle()
-        drawBorderForChildPhoto()
         replaceAndShowCameraButton()
         setupPhotoChooseForCameraIcon()
         showViewsWithAnimation()
@@ -71,21 +71,12 @@ class HappyBirthdayViewController: UIViewController {
             ageLabel.text = "YEAR\(fullYears == 1 ? "" : "S") OLD!"
         }
         
-        
     }
     
     private func setChildPhotoIntoCircle() {
         
         childPhotoImageView.layer.cornerRadius = childPhotoImageView.frame.height / 2
         childPhotoImageView.clipsToBounds = true
-        
-    }
-    
-    private func drawBorderForChildPhoto() {
-        
-        guard let childPhotoBorderColor = borderColor?.cgColor else { return }
-        childPhotoImageView.layer.borderWidth = 8
-        childPhotoImageView.layer.borderColor = childPhotoBorderColor
         
     }
     
@@ -134,8 +125,6 @@ class HappyBirthdayViewController: UIViewController {
         }
         
     }
-    
-    // TODO: add action for getting screenshot
 
     // MARK: actions
     @IBAction func closeAction(_ sender: UIButton) {
@@ -150,33 +139,6 @@ class HappyBirthdayViewController: UIViewController {
 
 }
 
-extension HappyBirthdayViewController: HappyBirthdayDelegate {
-    
-    func update(withTheme: ThemeSet) {
-        
-        backgroundView.backgroundColor = withTheme.backgroundColor
-        mainThemeImageView.image = withTheme.mainImage
-        
-        if let childPhotoData = viewModel.childData.photoData,
-            let childPhoto = UIImage(data: childPhotoData) {
-            
-            childPhotoImageView.image = childPhoto
-            
-        } else {
-            childPhotoImageView.image = withTheme.placeholderImage
-        }
-        
-        borderColor = withTheme.circleBordercolor
-        cameraIconImageView.image = withTheme.cameraIconImage
-        
-    }
-    
-    func showError(message: String) {
-        // TODO: create alert and show error message
-    }
-    
-}
-
 extension HappyBirthdayViewController: ImagePickerDelegate {
 
     func didSelect(image: UIImage?) {
@@ -184,6 +146,34 @@ extension HappyBirthdayViewController: ImagePickerDelegate {
         guard let newPhotoData = image?.pngData() else { return }
         viewModel.saveNewChildPhoto(imageData: newPhotoData)
         childPhotoImageView.image = image
+        
+    }
+    
+}
+
+extension HappyBirthdayViewController: ImageForSharingPrepareDelegate {
+    
+    func prepareImageToShare(completion: @escaping (Result<UIImage, Error>) -> Void) {
+        
+        let bounds = view.bounds
+        cameraIconImageView.isHidden = true
+        closeButton.isHidden = true
+        shareButtonView.isHidden = true
+        
+        UIGraphicsBeginImageContextWithOptions(bounds.size, true, 0.0)
+        self.view.drawHierarchy(in: bounds, afterScreenUpdates: true)
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        
+        cameraIconImageView.isHidden = false
+        closeButton.isHidden = false
+        shareButtonView.isHidden = false
+        
+        if let screenshot = img {
+            completion(.success(screenshot))
+        } else {
+            completion(.failure(NSError(domain: "Cannot make screenshot", code: 0)))
+        }
+        
         
     }
     

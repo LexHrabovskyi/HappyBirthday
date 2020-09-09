@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D744E03D25093FC400FC88A5 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744E03C25093FC400FC88A5 /* ShareView.swift */; };
+		D744E03F25093FCD00FC88A5 /* ShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D744E03E25093FCD00FC88A5 /* ShareView.xib */; };
 		D78B28A22508BFD40003916A /* ThemeManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B28A12508BFD40003916A /* ThemeManagement.swift */; };
 		D78B28A32508BFD40003916A /* ThemeManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B28A12508BFD40003916A /* ThemeManagement.swift */; };
 		D78B28A52508BFE10003916A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B28A42508BFE10003916A /* Theme.swift */; };
@@ -44,6 +46,8 @@
 		D7D05F752506C96E004BB3B1 /* SavedUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F742506C96E004BB3B1 /* SavedUserData.swift */; };
 		D7D05F762506C975004BB3B1 /* SavedUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F742506C96E004BB3B1 /* SavedUserData.swift */; };
 		D7D05F782506C9EE004BB3B1 /* SavedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */; };
+		D7D6CDCF25094A3C00A997FA /* ImageForSharingPrepareDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D6CDCE25094A3C00A997FA /* ImageForSharingPrepareDelegate.swift */; };
+		D7D6CDD125094BA000A997FA /* HappyBirthdayVC+ModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D6CDD025094BA000A997FA /* HappyBirthdayVC+ModelDelegate.swift */; };
 		D7E4C98A25090A8600F5C24A /* AgeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4C98925090A8600F5C24A /* AgeImages.swift */; };
 		D7E4C98B25090A8600F5C24A /* AgeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4C98925090A8600F5C24A /* AgeImages.swift */; };
 		D7E4C98D25090B8800F5C24A /* AgeImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4C98C25090B8800F5C24A /* AgeImagesTests.swift */; };
@@ -61,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D744E03C25093FC400FC88A5 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		D744E03E25093FCD00FC88A5 /* ShareView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareView.xib; sourceTree = "<group>"; };
 		D78B28A12508BFD40003916A /* ThemeManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManagement.swift; sourceTree = "<group>"; };
 		D78B28A42508BFE10003916A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D78B28A72508C14B0003916A /* ThemeSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSet.swift; sourceTree = "<group>"; };
@@ -91,6 +97,8 @@
 		D7D05F712506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsVC+DetailsDelegate.swift"; sourceTree = "<group>"; };
 		D7D05F742506C96E004BB3B1 /* SavedUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUserData.swift; sourceTree = "<group>"; };
 		D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataService.swift; sourceTree = "<group>"; };
+		D7D6CDCE25094A3C00A997FA /* ImageForSharingPrepareDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageForSharingPrepareDelegate.swift; sourceTree = "<group>"; };
+		D7D6CDD025094BA000A997FA /* HappyBirthdayVC+ModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HappyBirthdayVC+ModelDelegate.swift"; sourceTree = "<group>"; };
 		D7E4C98925090A8600F5C24A /* AgeImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeImages.swift; sourceTree = "<group>"; };
 		D7E4C98C25090B8800F5C24A /* AgeImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeImagesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +121,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D744E03B25093FA400FC88A5 /* Share view */ = {
+			isa = PBXGroup;
+			children = (
+				D7D6CDCE25094A3C00A997FA /* ImageForSharingPrepareDelegate.swift */,
+				D744E03C25093FC400FC88A5 /* ShareView.swift */,
+				D744E03E25093FCD00FC88A5 /* ShareView.xib */,
+			);
+			path = "Share view";
+			sourceTree = "<group>";
+		};
 		D78B28A02508BF9F0003916A /* Theme management */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,7 +157,9 @@
 				D78B28B22508D0070003916A /* HappyBirthdayProtocols.swift */,
 				D78B28B52508D19D0003916A /* HappyBirthdayViewModel.swift */,
 				D78B28B82508D3560003916A /* HappyBirthdayViewController.swift */,
+				D7D6CDD025094BA000A997FA /* HappyBirthdayVC+ModelDelegate.swift */,
 				D78B28B92508D3560003916A /* HappyBirthdayViewController.xib */,
+				D744E03B25093FA400FC88A5 /* Share view */,
 			);
 			path = "Happy birthday screen";
 			sourceTree = "<group>";
@@ -323,6 +343,7 @@
 				D78B28BB2508D3560003916A /* HappyBirthdayViewController.xib in Resources */,
 				D7D05F512506BF24004BB3B1 /* LaunchScreen.storyboard in Resources */,
 				D7D05F4E2506BF24004BB3B1 /* Assets.xcassets in Resources */,
+				D744E03F25093FCD00FC88A5 /* ShareView.xib in Resources */,
 				D7D05F6D2506C336004BB3B1 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,11 +364,13 @@
 			files = (
 				D7D05F682506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */,
 				D78B28A82508C14B0003916A /* ThemeSet.swift in Sources */,
+				D7D6CDCF25094A3C00A997FA /* ImageForSharingPrepareDelegate.swift in Sources */,
 				D78B28B32508D0070003916A /* HappyBirthdayProtocols.swift in Sources */,
 				D78B28AB2508C42C0003916A /* ThemeErrors.swift in Sources */,
 				D7D05F782506C9EE004BB3B1 /* SavedDataService.swift in Sources */,
 				D7D05F6F2506C348004BB3B1 /* DetailsViewModel.swift in Sources */,
 				D7D05F752506C96E004BB3B1 /* SavedUserData.swift in Sources */,
+				D744E03D25093FC400FC88A5 /* ShareView.swift in Sources */,
 				D78B28BA2508D3560003916A /* HappyBirthdayViewController.swift in Sources */,
 				D78B28A22508BFD40003916A /* ThemeManagement.swift in Sources */,
 				D7D05F452506BF21004BB3B1 /* AppDelegate.swift in Sources */,
@@ -359,6 +382,7 @@
 				D78B28A52508BFE10003916A /* Theme.swift in Sources */,
 				D7BE6F7B250819A300F35CE4 /* PhotoPickerService.swift in Sources */,
 				D7BE6F722507F64600F35CE4 /* AgeCount.swift in Sources */,
+				D7D6CDD125094BA000A997FA /* HappyBirthdayVC+ModelDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
