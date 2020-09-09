@@ -44,6 +44,9 @@
 		D7D05F752506C96E004BB3B1 /* SavedUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F742506C96E004BB3B1 /* SavedUserData.swift */; };
 		D7D05F762506C975004BB3B1 /* SavedUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F742506C96E004BB3B1 /* SavedUserData.swift */; };
 		D7D05F782506C9EE004BB3B1 /* SavedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */; };
+		D7E4C98A25090A8600F5C24A /* AgeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4C98925090A8600F5C24A /* AgeImages.swift */; };
+		D7E4C98B25090A8600F5C24A /* AgeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4C98925090A8600F5C24A /* AgeImages.swift */; };
+		D7E4C98D25090B8800F5C24A /* AgeImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4C98C25090B8800F5C24A /* AgeImagesTests.swift */; };
 		D7FF1CE52507DB4C00B2C008 /* SavedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +91,8 @@
 		D7D05F712506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsVC+DetailsDelegate.swift"; sourceTree = "<group>"; };
 		D7D05F742506C96E004BB3B1 /* SavedUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUserData.swift; sourceTree = "<group>"; };
 		D7D05F772506C9EE004BB3B1 /* SavedDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataService.swift; sourceTree = "<group>"; };
+		D7E4C98925090A8600F5C24A /* AgeImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeImages.swift; sourceTree = "<group>"; };
+		D7E4C98C25090B8800F5C24A /* AgeImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeImagesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +158,7 @@
 			children = (
 				D7BE6F712507F64600F35CE4 /* AgeCount.swift */,
 				D7BE6F742507F71900F35CE4 /* AgeCalculator.swift */,
+				D7E4C98925090A8600F5C24A /* AgeImages.swift */,
 			);
 			path = "Age calculation";
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 				D7D05F5B2506BF24004BB3B1 /* SavedUserDataTests.swift */,
 				D7BE6F772507FA1100F35CE4 /* DateCalculatorTests.swift */,
 				D78B28AD2508CD4F0003916A /* TestThemeManagement.swift */,
+				D7E4C98C25090B8800F5C24A /* AgeImagesTests.swift */,
 				D7BE6F6F2507EA0400F35CE4 /* Details model tests */,
 				D7D05F5D2506BF24004BB3B1 /* Info.plist */,
 			);
@@ -345,6 +352,7 @@
 				D78B28A22508BFD40003916A /* ThemeManagement.swift in Sources */,
 				D7D05F452506BF21004BB3B1 /* AppDelegate.swift in Sources */,
 				D7D05F6C2506C336004BB3B1 /* DetailsViewController.swift in Sources */,
+				D7E4C98A25090A8600F5C24A /* AgeImages.swift in Sources */,
 				D7D05F722506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift in Sources */,
 				D7BE6F752507F71900F35CE4 /* AgeCalculator.swift in Sources */,
 				D78B28B62508D19D0003916A /* HappyBirthdayViewModel.swift in Sources */,
@@ -368,7 +376,9 @@
 				D7BE6F6C2507E8DD00F35CE4 /* DetailsViewModelTests.swift in Sources */,
 				D78B28A32508BFD40003916A /* ThemeManagement.swift in Sources */,
 				D7BE6F6E2507E93900F35CE4 /* DetailsDelegateMOCK.swift in Sources */,
+				D7E4C98D25090B8800F5C24A /* AgeImagesTests.swift in Sources */,
 				D7BE6F782507FA1100F35CE4 /* DateCalculatorTests.swift in Sources */,
+				D7E4C98B25090A8600F5C24A /* AgeImages.swift in Sources */,
 				D7FF1CE52507DB4C00B2C008 /* SavedDataService.swift in Sources */,
 				D7D05F702506C348004BB3B1 /* DetailsViewModel.swift in Sources */,
 				D78B28B72508D19D0003916A /* HappyBirthdayViewModel.swift in Sources */,
