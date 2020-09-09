@@ -27,8 +27,6 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        // TODO:
-        // add tap gesture outside 
         super.viewDidLoad()
         viewModel.delegate = self
         loadSavedData()
@@ -84,11 +82,10 @@ class DetailsViewController: UIViewController {
             return
         }
         
-        // TODO:
-        // make some model with this data
-        // make view controller with model above
-        // change modal presentation style (full screen?)
-        // present view controller
+        let birhdayModel = HappyBirthdayViewModel(childData: savedData)
+        let birthdayViewController = HappyBirthdayViewController(viewModel: birhdayModel)
+        birthdayViewController.modalPresentationStyle = .overCurrentContext
+        self.present(birthdayViewController, animated: true)
         
     }
     
