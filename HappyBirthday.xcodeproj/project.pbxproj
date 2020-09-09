@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D78B28A22508BFD40003916A /* ThemeManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B28A12508BFD40003916A /* ThemeManagement.swift */; };
+		D78B28A32508BFD40003916A /* ThemeManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B28A12508BFD40003916A /* ThemeManagement.swift */; };
+		D78B28A52508BFE10003916A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B28A42508BFE10003916A /* Theme.swift */; };
+		D78B28A62508BFE10003916A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B28A42508BFE10003916A /* Theme.swift */; };
+		D78B28A82508C14B0003916A /* ThemeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B28A72508C14B0003916A /* ThemeSet.swift */; };
+		D78B28A92508C14B0003916A /* ThemeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B28A72508C14B0003916A /* ThemeSet.swift */; };
+		D78B28AB2508C42C0003916A /* ThemeErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B28AA2508C42C0003916A /* ThemeErrors.swift */; };
+		D78B28AC2508C42C0003916A /* ThemeErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B28AA2508C42C0003916A /* ThemeErrors.swift */; };
+		D78B28AF2508CD4F0003916A /* TestThemeManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B28AD2508CD4F0003916A /* TestThemeManagement.swift */; };
 		D7BE6F6C2507E8DD00F35CE4 /* DetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F6B2507E8DD00F35CE4 /* DetailsViewModelTests.swift */; };
 		D7BE6F6E2507E93900F35CE4 /* DetailsDelegateMOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F6D2507E93900F35CE4 /* DetailsDelegateMOCK.swift */; };
 		D7BE6F722507F64600F35CE4 /* AgeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F712507F64600F35CE4 /* AgeCount.swift */; };
@@ -43,6 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D78B28A12508BFD40003916A /* ThemeManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManagement.swift; sourceTree = "<group>"; };
+		D78B28A42508BFE10003916A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D78B28A72508C14B0003916A /* ThemeSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSet.swift; sourceTree = "<group>"; };
+		D78B28AA2508C42C0003916A /* ThemeErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeErrors.swift; sourceTree = "<group>"; };
+		D78B28AD2508CD4F0003916A /* TestThemeManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestThemeManagement.swift; sourceTree = "<group>"; };
 		D7BE6F6B2507E8DD00F35CE4 /* DetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelTests.swift; sourceTree = "<group>"; };
 		D7BE6F6D2507E93900F35CE4 /* DetailsDelegateMOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDelegateMOCK.swift; sourceTree = "<group>"; };
 		D7BE6F712507F64600F35CE4 /* AgeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCount.swift; sourceTree = "<group>"; };
@@ -84,6 +98,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D78B28A02508BF9F0003916A /* Theme management */ = {
+			isa = PBXGroup;
+			children = (
+				D78B28A12508BFD40003916A /* ThemeManagement.swift */,
+				D78B28A72508C14B0003916A /* ThemeSet.swift */,
+				D78B28AA2508C42C0003916A /* ThemeErrors.swift */,
+				D78B28A42508BFE10003916A /* Theme.swift */,
+			);
+			path = "Theme management";
+			sourceTree = "<group>";
+		};
 		D7BE6F6F2507EA0400F35CE4 /* Details model tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +161,7 @@
 				D7D05F732506C942004BB3B1 /* Saved user data */,
 				D7D05F662506C2EB004BB3B1 /* Details screen */,
 				D7BE6F792508197600F35CE4 /* Photo picker */,
+				D78B28A02508BF9F0003916A /* Theme management */,
 				D7D05F4D2506BF24004BB3B1 /* Assets.xcassets */,
 				D7D05F4F2506BF24004BB3B1 /* LaunchScreen.storyboard */,
 				D7D05F522506BF24004BB3B1 /* Info.plist */,
@@ -148,6 +174,7 @@
 			children = (
 				D7D05F5B2506BF24004BB3B1 /* SavedUserDataTests.swift */,
 				D7BE6F772507FA1100F35CE4 /* DateCalculatorTests.swift */,
+				D78B28AD2508CD4F0003916A /* TestThemeManagement.swift */,
 				D7BE6F6F2507EA0400F35CE4 /* Details model tests */,
 				D7D05F5D2506BF24004BB3B1 /* Info.plist */,
 			);
@@ -277,13 +304,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D05F682506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */,
+				D78B28A82508C14B0003916A /* ThemeSet.swift in Sources */,
+				D78B28AB2508C42C0003916A /* ThemeErrors.swift in Sources */,
 				D7D05F782506C9EE004BB3B1 /* SavedDataService.swift in Sources */,
 				D7D05F6F2506C348004BB3B1 /* DetailsViewModel.swift in Sources */,
 				D7D05F752506C96E004BB3B1 /* SavedUserData.swift in Sources */,
+				D78B28A22508BFD40003916A /* ThemeManagement.swift in Sources */,
 				D7D05F452506BF21004BB3B1 /* AppDelegate.swift in Sources */,
 				D7D05F6C2506C336004BB3B1 /* DetailsViewController.swift in Sources */,
 				D7D05F722506C612004BB3B1 /* DetailsVC+DetailsDelegate.swift in Sources */,
 				D7BE6F752507F71900F35CE4 /* AgeCalculator.swift in Sources */,
+				D78B28A52508BFE10003916A /* Theme.swift in Sources */,
 				D7BE6F7B250819A300F35CE4 /* PhotoPickerService.swift in Sources */,
 				D7BE6F722507F64600F35CE4 /* AgeCount.swift in Sources */,
 			);
@@ -294,13 +325,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D05F692506C314004BB3B1 /* DetailsScreenProtocols.swift in Sources */,
+				D78B28A92508C14B0003916A /* ThemeSet.swift in Sources */,
+				D78B28AC2508C42C0003916A /* ThemeErrors.swift in Sources */,
+				D78B28AF2508CD4F0003916A /* TestThemeManagement.swift in Sources */,
 				D7D05F5C2506BF24004BB3B1 /* SavedUserDataTests.swift in Sources */,
 				D7D05F762506C975004BB3B1 /* SavedUserData.swift in Sources */,
 				D7BE6F6C2507E8DD00F35CE4 /* DetailsViewModelTests.swift in Sources */,
+				D78B28A32508BFD40003916A /* ThemeManagement.swift in Sources */,
 				D7BE6F6E2507E93900F35CE4 /* DetailsDelegateMOCK.swift in Sources */,
 				D7BE6F782507FA1100F35CE4 /* DateCalculatorTests.swift in Sources */,
 				D7FF1CE52507DB4C00B2C008 /* SavedDataService.swift in Sources */,
 				D7D05F702506C348004BB3B1 /* DetailsViewModel.swift in Sources */,
+				D78B28A62508BFE10003916A /* Theme.swift in Sources */,
 				D7BE6F762507F71900F35CE4 /* AgeCalculator.swift in Sources */,
 				D7BE6F732507F64600F35CE4 /* AgeCount.swift in Sources */,
 			);
