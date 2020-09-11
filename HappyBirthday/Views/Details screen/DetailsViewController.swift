@@ -57,13 +57,17 @@ class DetailsViewController: UIViewController {
         
         childNameTextField.placeholder = "Please, enter child name"
         
+        let today = Date()
+        let twelveYearsAgo = Calendar.current.date(byAdding: .year, value: -12, to: today)
+        childBirthdayDatePicker.maximumDate = today
+        childBirthdayDatePicker.minimumDate = twelveYearsAgo
+        
         showBirthdayScreenButton.layer.cornerRadius = 4
         
         let childImagePresent = childImageView.image != nil
         childImageView.layer.borderColor = childImagePresent ? nil : UIColor.gray.cgColor
         childImageView.layer.borderWidth = childImagePresent ? 0 : 1
         imageAddInfoLabel.isHidden = childImagePresent
-        
         
     }
     
