@@ -43,10 +43,14 @@ class HappyBirthdayViewController: UIViewController {
         
         super.viewDidAppear(animated)
         setChildPhotoIntoCircle()
-        replaceAndShowCameraButton()
         setupPhotoChooseForCameraIcon()
         showViewsWithAnimation()
         
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        replaceAndShowCameraButton()
     }
     
     private func configureUI() {
