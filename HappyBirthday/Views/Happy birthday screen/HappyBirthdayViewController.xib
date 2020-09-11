@@ -52,9 +52,6 @@
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="paE-Cm-tvX" userLabel="Age image">
                     <rect key="frame" x="171" y="161.5" width="72" height="107.5"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="paE-Cm-tvX" secondAttribute="height" multiplier="1:1.5" id="aAq-Xv-1Va"/>
-                    </constraints>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Right swirls" translatesAutoresizingMaskIntoConstraints="NO" id="nMk-n8-gwS">
                     <rect key="frame" x="259" y="184" width="62" height="62"/>
@@ -68,12 +65,6 @@
                     <color key="textColor" red="0.23655992749999999" green="0.27637124060000001" blue="0.37648284440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default_place_holder_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="1CE-HQ-EhV" userLabel="Child photo">
-                    <rect key="frame" x="87" y="435.5" width="240" height="240"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="1CE-HQ-EhV" secondAttribute="height" multiplier="1:1" id="Tbb-IJ-PyB"/>
-                    </constraints>
-                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAI-lD-1yX" userLabel="Shared button view" customClass="ShareView" customModule="HappyBirthday" customModuleProvider="target">
                     <rect key="frame" x="87" y="328" width="240" height="45"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,6 +72,12 @@
                         <constraint firstAttribute="width" secondItem="NAI-lD-1yX" secondAttribute="height" multiplier="8:1.5" id="KqG-6S-ika"/>
                     </constraints>
                 </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default_place_holder_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="1CE-HQ-EhV" userLabel="Child photo">
+                    <rect key="frame" x="87" y="435.5" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1CE-HQ-EhV" secondAttribute="height" multiplier="1:1" id="Tbb-IJ-PyB"/>
+                    </constraints>
+                </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera_icon_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="FVh-K8-wG8" userLabel="Camera icon">
                     <rect key="frame" x="291" y="435.5" width="36" height="36"/>
                     <constraints>
@@ -130,9 +127,10 @@
                 <constraint firstItem="paE-Cm-tvX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="B8c-yo-8oR"/>
                 <constraint firstItem="nMk-n8-gwS" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.15" id="C6w-5O-pZ5"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9TI-H7-OM9" secondAttribute="bottomMargin" constant="20" id="GZp-Id-m5f"/>
-                <constraint firstItem="paE-Cm-tvX" firstAttribute="leading" secondItem="uLc-9x-AzJ" secondAttribute="trailing" constant="16" id="Ix3-gm-xnP"/>
+                <constraint firstItem="paE-Cm-tvX" firstAttribute="leading" secondItem="uLc-9x-AzJ" secondAttribute="trailing" constant="8" id="Ix3-gm-xnP"/>
                 <constraint firstItem="paE-Cm-tvX" firstAttribute="height" secondItem="AXX-Kg-cae" secondAttribute="height" multiplier="0.12" id="Kbc-K7-lvW"/>
                 <constraint firstAttribute="bottom" secondItem="kDQ-rJ-0X3" secondAttribute="bottom" id="MS8-Nq-NXL"/>
+                <constraint firstItem="1CE-HQ-EhV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="NAI-lD-1yX" secondAttribute="bottom" constant="8" id="OIz-cl-DZe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AXX-Kg-cae" secondAttribute="trailing" id="OZF-Cg-Dho"/>
                 <constraint firstItem="9TI-H7-OM9" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="RtH-IL-cfT"/>
                 <constraint firstItem="uLc-9x-AzJ" firstAttribute="centerY" secondItem="paE-Cm-tvX" secondAttribute="centerY" id="T0m-6c-vky"/>
@@ -147,12 +145,12 @@
                 <constraint firstItem="uLc-9x-AzJ" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.15" id="bX8-oP-BpL"/>
                 <constraint firstItem="NAI-lD-1yX" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.57971" id="czd-E9-yfP"/>
                 <constraint firstItem="AXX-Kg-cae" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fG0-1H-7Ml"/>
-                <constraint firstItem="NCt-tA-NeF" firstAttribute="top" secondItem="1CE-HQ-EhV" secondAttribute="bottom" id="gTr-mt-zKr"/>
+                <constraint firstItem="NCt-tA-NeF" firstAttribute="top" secondItem="1CE-HQ-EhV" secondAttribute="bottom" priority="750" id="gTr-mt-zKr"/>
                 <constraint firstItem="NAI-lD-1yX" firstAttribute="top" secondItem="PFM-SL-vXS" secondAttribute="bottom" constant="8" id="huc-Zz-0hB"/>
                 <constraint firstItem="zwX-ZK-gsY" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.18" id="hue-uF-tp1"/>
                 <constraint firstItem="9TI-H7-OM9" firstAttribute="top" secondItem="NCt-tA-NeF" secondAttribute="bottom" id="jSU-uw-zGM"/>
                 <constraint firstItem="AXX-Kg-cae" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jvM-eT-d2F"/>
-                <constraint firstItem="nMk-n8-gwS" firstAttribute="leading" secondItem="paE-Cm-tvX" secondAttribute="trailing" constant="16" id="lyO-O3-8vy"/>
+                <constraint firstItem="nMk-n8-gwS" firstAttribute="leading" secondItem="paE-Cm-tvX" secondAttribute="trailing" constant="8" id="lyO-O3-8vy"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kDQ-rJ-0X3" secondAttribute="trailing" id="mla-iV-cWW"/>
                 <constraint firstItem="1CE-HQ-EhV" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ppc-wC-oX1"/>
                 <constraint firstItem="5uy-ZZ-T3O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="qeO-E3-gVu"/>
