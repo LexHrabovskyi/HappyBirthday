@@ -88,6 +88,8 @@ class DetailsViewController: UIViewController {
     // MARK: actions
     @IBAction func showBirthdayScreenAction(_ sender: UIButton) {
         
+        childNameTextField.resignFirstResponder()
+        
         guard let savedData = viewModel.getSavedData() else {
             print("should not get this case")
             return
@@ -107,11 +109,22 @@ class DetailsViewController: UIViewController {
     
     private func saveNewData() {
         
-        guard let newName = childNameTextField.text, birthdayDidChange else { return }
+        guard let newName = childNameTextField.text, !newName.isEmpty, birthdayDidChange else { return }
         let newBirthday = childBirthdayDatePicker.date
         let newPhoto = childImageView.image?.pngData()
         
         let savedData = SavedUserData(name: newName, dateOfBirth: newBirthday, photoData: newPhoto)
+        viewModel.saveUserData(savedData)
+        
+    }
+    
+    private func saveNewData(nameInProgress: String) {
+        
+        guard birthdayDidChange else { return }
+        let newBirthday = childBirthdayDatePicker.date
+        let newPhoto = childImageView.image?.pngData()
+        
+        let savedData = SavedUserData(name: nameInProgress, dateOfBirth: newBirthday, photoData: newPhoto)
         viewModel.saveUserData(savedData)
         
     }
@@ -127,6 +140,21 @@ extension DetailsViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         saveNewData()
+        return true
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if let text = textField.text, let textRange = Range(range, in: text) {
+            
+            let updatedText = text.replacingCharacters(in: textRange, with: string)
+            if updatedText.isEmpty {
+                disableContinueButton()
+            } else {
+                saveNewData(nameInProgress: updatedText)
+            }
+        }
+        
         return true
     }
     

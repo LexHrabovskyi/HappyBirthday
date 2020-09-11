@@ -54,6 +54,11 @@ class DetailsViewModel: DetailsModel {
             
         }
         
+        guard !savedData.name.isEmpty else {
+            delegate?.disableContinueButton()
+            return
+        }
+        
         switch childAge {
         case .year(let fullYears):
             
