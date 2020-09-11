@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -24,7 +24,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwX-ZK-gsY" userLabel="Top spacer">
@@ -40,8 +40,8 @@
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TODAY CHRISTIANA RONALDO IS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kiO-ZM-m3u" userLabel="Greeting label">
                     <rect key="frame" x="50" y="76" width="314" height="69.5"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
-                    <color key="textColor" red="0.2366048694" green="0.27627405519999998" blue="0.3804048002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                    <color key="textColor" red="0.2596043348" green="0.3130732477" blue="0.43331766129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Left swirls" translatesAutoresizingMaskIntoConstraints="NO" id="uLc-9x-AzJ">
@@ -61,8 +61,8 @@
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTHS OLD!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PFM-SL-vXS" userLabel="Age label">
                     <rect key="frame" x="100" y="285" width="214" height="35"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
-                    <color key="textColor" red="0.23655992749999999" green="0.27637124060000001" blue="0.37648284440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                    <color key="textColor" red="0.25964626670000002" green="0.31294691559999999" blue="0.43749636409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAI-lD-1yX" userLabel="Shared button view" customClass="ShareView" customModule="HappyBirthday" customModuleProvider="target">
@@ -120,7 +120,7 @@
                 <constraint firstItem="5uy-ZZ-T3O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="0PQ-AP-PiW"/>
                 <constraint firstItem="zwX-ZK-gsY" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="0bf-Q3-ndK"/>
                 <constraint firstItem="paE-Cm-tvX" firstAttribute="top" secondItem="zwX-ZK-gsY" secondAttribute="bottom" id="4VR-1V-pbL"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PFM-SL-vXS" secondAttribute="trailing" constant="100" id="4jj-Ed-zog"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PFM-SL-vXS" secondAttribute="trailing" constant="50" id="4jj-Ed-zog"/>
                 <constraint firstItem="1CE-HQ-EhV" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.57971" id="66r-Xv-dlS"/>
                 <constraint firstItem="FVh-K8-wG8" firstAttribute="trailing" secondItem="1CE-HQ-EhV" secondAttribute="trailing" id="6km-W8-CWv"/>
                 <constraint firstItem="paE-Cm-tvX" firstAttribute="top" secondItem="kiO-ZM-m3u" secondAttribute="bottom" constant="16" id="B2U-qw-CbE"/>
@@ -134,13 +134,12 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AXX-Kg-cae" secondAttribute="trailing" id="OZF-Cg-Dho"/>
                 <constraint firstItem="9TI-H7-OM9" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="RtH-IL-cfT"/>
                 <constraint firstItem="uLc-9x-AzJ" firstAttribute="centerY" secondItem="paE-Cm-tvX" secondAttribute="centerY" id="T0m-6c-vky"/>
-                <constraint firstItem="PFM-SL-vXS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="T6h-gz-hcv"/>
+                <constraint firstItem="PFM-SL-vXS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="T6h-gz-hcv"/>
                 <constraint firstItem="kDQ-rJ-0X3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Te7-JE-TSX"/>
                 <constraint firstItem="kDQ-rJ-0X3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UYP-1D-bSp"/>
-                <constraint firstItem="PFM-SL-vXS" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Uyu-KL-Z2f"/>
                 <constraint firstItem="FVh-K8-wG8" firstAttribute="top" secondItem="1CE-HQ-EhV" secondAttribute="top" id="Zky-FH-C7L"/>
                 <constraint firstItem="nMk-n8-gwS" firstAttribute="centerY" secondItem="paE-Cm-tvX" secondAttribute="centerY" id="abH-bw-WW8"/>
-                <constraint firstItem="kiO-ZM-m3u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="aia-WL-2ts"/>
+                <constraint firstItem="kiO-ZM-m3u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="aia-WL-2ts"/>
                 <constraint firstItem="9TI-H7-OM9" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.2" id="avZ-Se-IZV"/>
                 <constraint firstItem="uLc-9x-AzJ" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.15" id="bX8-oP-BpL"/>
                 <constraint firstItem="NAI-lD-1yX" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.57971" id="czd-E9-yfP"/>
@@ -159,7 +158,7 @@
                 <constraint firstAttribute="bottom" secondItem="AXX-Kg-cae" secondAttribute="bottom" id="sYQ-BJ-ZCO"/>
                 <constraint firstItem="NCt-tA-NeF" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.17" id="u0H-q3-DnO"/>
                 <constraint firstItem="NCt-tA-NeF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xby-Es-yvy"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kiO-ZM-m3u" secondAttribute="trailing" constant="50" id="yTh-gi-OGa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kiO-ZM-m3u" secondAttribute="trailing" constant="40" id="yTh-gi-OGa"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="154"/>
