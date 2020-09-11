@@ -14,6 +14,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var childBirthdayDatePicker: UIDatePicker!
     @IBOutlet weak var childImageView: UIImageView!
     @IBOutlet weak var showBirthdayScreenButton: UIButton!
+    @IBOutlet weak var imageAddInfoLabel: UILabel!
     
     private let viewModel: DetailsModel
     private var birthdayDidChange = false
@@ -57,6 +58,12 @@ class DetailsViewController: UIViewController {
         childNameTextField.placeholder = "Please, enter child name"
         
         showBirthdayScreenButton.layer.cornerRadius = 4
+        
+        let childImagePresent = childImageView.image != nil
+        childImageView.layer.borderColor = childImagePresent ? nil : UIColor.gray.cgColor
+        childImageView.layer.borderWidth = childImagePresent ? 0 : 1
+        imageAddInfoLabel.isHidden = childImagePresent
+        
         
     }
     
@@ -126,6 +133,7 @@ extension DetailsViewController: ImagePickerDelegate {
     func didSelect(image: UIImage?) {
         childImageView.image = image
         saveNewData()
+        configureUI()
     }
     
 }
